@@ -25,12 +25,21 @@ This file contains a number of front-end interview questions that can be used wh
 #### General Questions:
 
 * What did you learn yesterday/this week?
+[DONE]I use multiple sources for my everyday learning process. Whether it be Team Treehouse, Lyndia or simply reading docs. Most recently I learned that about VueJS. It's an interesting and easy to use framework.
+
 * What excites or interests you about coding?
+[DONE]What excites me about coding is the ability to create solutions to problems today via my contributions of code. Some subjects of problem domains are more interesting than others but in the end the code is always fascinating. Coding is an awesome blend of creativity and logic. More important though is the ability to learn almost anything at any given time. I enjoy the contributions that people give to the world but also I myself enjoy contributing.
+
+
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
 * Which version control systems are you familiar with?
+[DONE] I'm familiar with Git mostly, though I've glanced at other types. It's something that I started utilizing from the first time I started coding. I find the features implemented with Github is very helpful.
+
 * Can you describe your workflow when you create a web page?
+The workflow for when I create a webpage starts with research, setting up a timeline and briefing myself on the outline of the project. The time period for this one depends on the project type. From there I'll sketch out some wireframes and basic design ideas. Next I'll typically set up a grid that 
+
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
