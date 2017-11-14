@@ -1,5 +1,7 @@
 # Front-end Job Interview Questions
 
+Let's aggergate some answers so we have a good idea on baseline answers. Also add in any extra questions if you thinkg of any.
+
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
 **Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
@@ -26,7 +28,7 @@ This file contains a number of front-end interview questions that can be used wh
 
 * What did you learn yesterday/this week?
 [DONE]
-I use multiple sources for my everyday learning process. Whether it be Team Treehouse, Lynda or simply reading docs. Most recently I learned that about VueJS. It's an interesting and easy to use framework.
+I use multiple sources for my everyday learning process. Whether it be Team Treehouse, Lynda or simply reading docs. Most recently I was studying EmberJS. It's an interesting, streamlined, but easy to use framework.
 
 * What excites or interests you about coding?
 [DONE]
@@ -79,6 +81,11 @@ CSS at the top of the page - Javascript at the bottom. Use parallelization when 
 #### HTML Questions:
 
 * What does a `doctype` do?
+
+[DONE] DOCTYPE is a required preamble.
+
+DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.
+
 * What's the difference between full standards mode, almost standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
