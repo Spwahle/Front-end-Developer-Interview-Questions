@@ -1,5 +1,7 @@
 # Front-end Job Interview Questions
 
+Let's aggergate some answers so we have a good idea on baseline answers. Also add in any extra questions if you thinkg of any.
+
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
 **Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
@@ -25,27 +27,48 @@ This file contains a number of front-end interview questions that can be used wh
 #### General Questions:
 
 * What did you learn yesterday/this week?
-[DONE]I use multiple sources for my everyday learning process. Whether it be Team Treehouse, Lyndia or simply reading docs. Most recently I learned that about VueJS. It's an interesting and easy to use framework.
+[DONE]
+I use multiple sources for my everyday learning process. Whether it be Team Treehouse, Lynda or simply reading docs. Most recently I was studying EmberJS. It's an interesting, streamlined, but easy to use framework.
 
 * What excites or interests you about coding?
-[DONE]What excites me about coding is the ability to create solutions to problems today via my contributions of code. Some subjects of problem domains are more interesting than others but in the end the code is always fascinating. Coding is an awesome blend of creativity and logic. More important though is the ability to learn almost anything at any given time. I enjoy the contributions that people give to the world but also I myself enjoy contributing.
+[DONE]
+What excites me about coding is the ability to create solutions to problems today via my contributions of code. Some subjects of problem domains are more interesting than others but in the end the code is always fascinating. Coding is an awesome blend of creativity and logic. More important though is the ability to learn almost anything at any given time. I enjoy the contributions that people give to the world but also I myself enjoy contributing.
 
 
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
 * Which version control systems are you familiar with?
-[DONE] I'm familiar with Git mostly, though I've glanced at other types. It's something that I started utilizing from the first time I started coding. I find the features implemented with Github is very helpful.
+[DONE]
+I'm familiar with Git, though I've glanced at other types. It's something that I started utilizing from the first time I started coding. I find the features implemented with Github is very helpful.
 
 * Can you describe your workflow when you create a web page?
-The workflow for when I create a webpage starts with research, setting up a timeline and briefing myself on the outline of the project. The time period for this one depends on the project type. From there I'll sketch out some wireframes and basic design ideas. Next I'll typically set up a grid that 
+The workflow for when I create a webpage starts with research, setting up a timeline and briefing myself on the outline of the project. The time period for this one depends on the project type. From there I'll sketch out some wireframes and basic design ideas. Next I'll typically set up a grid that will help me balance design items.  
 
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+[DONE]
+This is a good one. Keeping in mind I try to avoid CSS and just use a library (like Bootstrap), it seems to me I’d do the following:
+
+If the 5 style sheets were all application specific, I'd combine them into one file. If they were a combination of application specific style sheets and libraries (like Bootstrap), I'd only combine the application specific ones. I’d want Bootstrap (or whatever) separate to ensure it is easy to update in the future.
+
+I never really thought much about "organization" of my CSS because I rarely write much of it. I’d run CSSLint against it, but I don’t think CSSLint deals with "organization" of a large sheet. I’d also run a tool to find unused css, like uncss.
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
+
+[DONE]
+With progressive enhancement you start with a barebones web structure, that will run in older browsers, and then build on that structure with enhancements that come with more modern day browsers.
+
+Graceful degradation is the opposite. You start building with modern day browsers, and then check to see how your application is performing on older browsers, and then make adjustments from there.
+
 * How would you optimize a website's assets/resources?
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
+[DONE]
+Use progress bars or loading screens to help transition users.
+Prefetch or preload data
+CSS at the top of the page - Javascript at the bottom. Use parallelization when possible.
+
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
 * Describe how you would create a simple slideshow page.
 * If you could master one technology this year, what would it be?
@@ -58,6 +81,11 @@ The workflow for when I create a webpage starts with research, setting up a time
 #### HTML Questions:
 
 * What does a `doctype` do?
+
+[DONE] DOCTYPE is a required preamble.
+
+DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.
+
 * What's the difference between full standards mode, almost standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
