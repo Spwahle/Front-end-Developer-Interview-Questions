@@ -87,9 +87,55 @@ CSS at the top of the page - Javascript at the bottom. Use parallelization when 
 DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.
 
 * What's the difference between full standards mode, almost standards mode and quirks mode?
+
+[DONE] Almost standards mode is only available for some version of rendering engines which implements the vertical sizing of table cells traditionally and not according to the CSS2 specs, while full standards mode is chosen to render web page with a valid DOCTYPE and quirks mode is vendor specific implementation of parsing HTML in an old-school way.
+
+Quirks mode is the default compatible render mode of web pages if the browser can’t detect the doctype of the page. It differs from browser to browser due to different implementations of old-school rendering engines.
+
+In the Standards mode the browsers try to give documents the specification-wise correct treatment to the extent implemented in a particular browser.
+
 * What's the difference between HTML and XHTML?
+
+[DONE] XHTML, aka. Extensible Hypertext Markup Language,  is designed to extent HTML for better web with more stricter rules of syntax, but failed in doing so.
+
+HTML5 has two parsing modes or syntaxes: HTML and XML. The difference depends on whether the document is served with a Content-type: text/html header or a Content-type: application/xml+xhtml header.
+
+If it’s served as text/html, the following rules apply:
+
++Start tags are not required for every element.
++End tags are not required for every element.
++Only void elements such as br, img, and link may be “self-closed” with />.
++Tags and attributes are case-insensitive.
++Attributes do not need to be quoted.
++Some attributes may be empty (such as checked and disabled).
++Special characters, or entities, do not have to be escaped.
++The document must include an HTML5 DOCTYPE.
+
+HTML5 can also be written using a stricter, XML-like syntax. XHTML 1.0 was “a reformulation of HTML 4 as an XML 1.0 application.” That isn’t quite true of what is sometimes called “XHTML5”. XHTML5 is best understood as HTML5 that’s written and parsed using the syntax rules of XML and served with a Content-type: application/xml+xhtml response header.
+
+The following rules apply to “XHTML5”:
+
++All elements must have a start tag.
++Non-void elements with a start tag must have an end tag (p and li, for example).
++Any element may be “self-closed” using />.
++Tags and attributes are case sensitive, typically lowercase.
++Attribute values must be enclosed in quotes.
++Empty attributes are forbidden (checked must instead be checked="checked" or checked="true").
++Special characters must be escaped using character entities.
+
 * Are there any problems with serving pages as `application/xhtml+xml`?
+
+[DONE]Basically the problems lie in the differences between parsing HTML and XML as mentioned above.
+XHTML, or rather, XML syntax is less forgiving and if your page isn’t fully XML-compliant, there will be parsing errors and users get unreadable content.
+Serving your pages as application/xhtml+xml will cause Internet Explorer 8 to show a download dialog box for an unknown format instead of displaying your page, as the first version of Internet Explorer with support for XHTML is Internet Explorer 9.
+
+
 * How do you serve a page with content in multiple languages?
+
+[DONE] The question is a little vague, I will assume that it is asking about the most common case, which is how to serve a page with content available in multiple languages, but the content within the page is only in a single language.
+When an HTTP request is made to a server, the requesting user agent usually sends information about language preferences, such as in the Accept-Language header. The server can then use this information to return a version of the document in the appropriate language if such an alternative is available. The returned HTML document should also declare the lang attribute in the <html> tag, such as <html lang="en">...</html>.
+In the back end, the HTML markup will contain i18n placeholders and content for the specific language stored in YML or JSON formats. The server then dynamically generates the HTML page with content in that particular language, usually with the help of a back end framework.
+
 * What kind of things must you be wary of when design or developing for multilingual sites?
 * What are `data-` attributes good for?
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
@@ -173,7 +219,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
-* Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+* Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"+ at multiples of `3` and `5`
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 * Explain what a single page app is and how to make one SEO-friendly.
