@@ -36,6 +36,8 @@ What excites me about coding is the ability to create solutions to problems toda
 
 
 * What is a recent technical challenge you experienced and how did you solve it?
+[DONE]
+Recently, I've been building an app that helps you log and maintain your motorcycle. Unfortunately, I ran into an issue when working with a motorcycle API database. I was getting back a 400 response from time to time but I wasn't always apparent. The response was also I was receiving via fetch() was being given back in a promise and needed to be parsed. So I used Axios to skip the the middle man and receive the response directly while also error handling.
 
 
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
