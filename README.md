@@ -356,3 +356,13 @@ console.log('three');
 This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
 
 It has since received contributions from over [100 developers](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors).
+
+
+1. Some friends want to meet on a day this month when they are all free. Given a list of their schedules, which is an array of the days when they are unavailable, write an algorithm to find the first day everyone is available.
+2. Write a function that implements the rules of Conway's Game of Life (https://en.wikipedia.org/wiki/Conway's_Game_of_Life): given the current game state as input, produce the next game state as output.
+3. You are building a ticket machine that manages a parking lot. Each parking space has a number; all start out vacant. When someone enters, they are given a ticket with a vacant space's number on it; when they leave, they return the ticket. Design an object to model the ticket machine with two methods, `park` and `leave`. (The interviewer then built on this by introducing wrinkles that challenged my implementation - what if someone turns in their ticket from yesterday, i.e. a ticket corresponding to a parking space that is already vacant? What if we have to accommodate tour buses, which need 3 adjacent empty spaces to park?) (edited)
+
+4. You get a string that has single digits and 2 operators that are either + or *. Evaluate the expression.
+So, you get something like "2+3*7" and want it to evaluate to 35. Assume for simplicity's sake that rules of operations don't apply and you just do the math straight across rather than multiply first.
+
+5. Write a recursive function that sums a set of numbers from 1 to n
