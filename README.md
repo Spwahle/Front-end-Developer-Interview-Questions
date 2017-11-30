@@ -36,8 +36,21 @@ What excites me about coding is the ability to create solutions to problems toda
 
 
 * What is a recent technical challenge you experienced and how did you solve it?
+
+
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+[DONE]
+like to adhere by Kent Beck’s maxim:
+
+Make it Work.  Make it Right.  Make it Fast.
+
+In other words, I tend to focus first on just shipping something, to determine if this even is what the customer wants.  Then, we can refactor and optimize and think about performance, security, etc.  One constant consideration I am making, in regards to maintainability: every time some code appears more than once, that’s a flag and I usually add a Todo to the backlog to come back and make it DRY.  Same thing with if I have a function that does more than one thing well, I’ll likely want to refactor that also.
+
 * Talk about your preferred development environment.
+[DONE]
+ My primary device is a MacBook Pro running MacOS. I also like a nicely customized iTerm (eg one that displays the name of your current branch), lots of screen real estate (eg one screen for live reloading of app views and another for code), and automated testing that is running continually in the background. Typically, I'm using VSCode as my text editor.
+
+
 * Which version control systems are you familiar with?
 [DONE]
 I'm familiar with Git, though I've glanced at other types. It's something that I started utilizing from the first time I started coding. I find the features implemented with Github is very helpful.
